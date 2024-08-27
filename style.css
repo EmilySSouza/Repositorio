@@ -54,6 +54,12 @@ header img {
     border-radius: 50%;
     width: 20rem;
     border: 0.5rem solid black;
+    transition: transform 1s ease;
+    transform-style: preserve-3d;
+}
+
+header img:hover {
+    transform: rotateY(360deg);
 }
 
 #textHeader {
@@ -91,6 +97,15 @@ nav ul li {
     width: 100%;
     text-align: center;
     font-size: 2rem;
+    padding: 0.5rem 1rem;
+    transition: transform 0.3s ease, background-size 0.3s ease;
+}
+
+nav ul li:hover {
+    background-color: rgb(70, 69, 69);
+    background-size: 110% 110%;
+    transform: scale(1.05);
+    border-radius: 1rem;
 }
 
 section, footer {
@@ -123,12 +138,17 @@ section, footer {
     padding: 2rem;
     background-color: rgb(104, 24, 122);
     border-radius: 2rem;
+    transition: transform 0.3s ease;
 }
 
 .activitiesList img {
     width: 35rem;
     height: 35rem;
     margin-top: 2rem;
+}
+
+.activitiesList a:hover {
+    transform: scale(1.05);
 }
 
 .activitiesList ul, .activitiesList p {
@@ -166,7 +186,9 @@ footer {
         flex-direction: column;
         gap: 2rem;
     }
+}
 
+@media (max-width: 670px) {
     nav ul{
         display: flex;
         flex-direction: column;
