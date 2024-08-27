@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+#app {
+    background: rgb(153,0,180);
+    background: linear-gradient(50deg, rgba(153,0,180,1) 0%, rgba(66,7,63,1) 62%);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a, p, li, h1, h2 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2 {
+    font-size: 2.0rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 2.4rem;
+    align-items: center;
+}
+
+header img {
+    border-radius: 50%;
+    width: 20rem;
+    border: 0.5rem solid black;
+}
+
+#textHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#textHeader p {
+    font-size: 1.6rem;
+}
+
+nav {
+    margin-top: 2rem;
+    background-color: rgb(0, 0, 0);
+    margin-inline: 2rem;
+    border-radius: 5rem;
+    padding: 2rem;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0; 
+    text-align: center;
+}
+
+nav ul li {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+section, footer {
+    background-color: rgb(134, 83, 145);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-inline: 2rem;
+}
+
+#biography p, #skills p, #activities p, footer p {
+    margin-top: 1.6rem;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.activitiesList {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(104, 24, 122);
+    border-radius: 2rem;
+}
+
+.activitiesList img {
+    width: 35rem;
+    height: 35rem;
+    margin-top: 2rem;
+}
+
+.activitiesList ul, .activitiesList p {
+    margin-top: 2rem;
+}
+
+.activitiesList li, .activitiesList p {
+    font-size: 1.6rem;
+}
+
+footer #contact {
+    margin-top: 1rem;
+}
+
+footer i {
+    font-size: 4rem;
+    color: white;
+}
+
+footer {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1070px) {
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 570px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center
+    }
+}
+
+@media (max-width: 500px) {
+    @media (max-width: 500px) {
+        .activitiesList {
+            padding: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .activitiesList img {
+            width: 100%;
+            height: auto;
+        }
+        
+    }
+}
