@@ -114,7 +114,7 @@ section, footer {
     gap: 2rem;
 }
 
-.activitiesList {
+.activitiesList a {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
